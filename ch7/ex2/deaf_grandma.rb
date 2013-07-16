@@ -3,7 +3,7 @@ while true
 	if input == "BYE"
 		break
 	elsif input == input.upcase
-		puts("NO, NOT SINCE " + (1930 + rand(20)).to_s()) + "!"
+		puts("NO, NOT SINCE " + (1930 + rand(20)).to_s() + "!")
 	else
 		puts("HUH?!  SPEAK UP, SONNY!")
 	end
