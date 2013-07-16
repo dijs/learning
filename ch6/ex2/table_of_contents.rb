@@ -16,4 +16,5 @@ chapters = [
 width = 64
 
 puts("Table of Contents".center(width))
-chapters.each_with_index { |chapter, index| puts(("Chapter " + (index + 1).to_s() + ". " + chapter[:title]).ljust(width/2) + ("page " + chapter[:page].to_s()).rjust(width/2)) }
+chapters.each_with_index { |chapter, index| puts(("Chapter " + (index + 1).to_s() + 
+	". " + chapter[:title]).ljust(width/2) + ("page " + chapter[:page].to_s().rjust(3)).rjust(width/2)) }
