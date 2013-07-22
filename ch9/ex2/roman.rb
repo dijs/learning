@@ -24,14 +24,11 @@ class Roman
 		:I => 1
 	}
 	def gconvert(sym, i)
-		s = ""
-		t = i
-		sym.each do |k, v|
-			d = t / v
-			t = t % v
+		sym.inject("") do |s, (k, v)|
+			d = i / v
+			i = i % v
 			s += k.to_s * d
 		end
-		s
 	end
 	def old_convert(i)
 		gconvert @@oldSym, i
