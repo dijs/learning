@@ -7,12 +7,12 @@ class TestRoman < MiniTest::Unit::TestCase
   end
   def test
   	#old
-  	assert_equal "VIIII", @roman.convert(9)
-  	assert_equal "MXII", @roman.convert(1012)
-  	assert_equal "CI", @roman.convert(101)
-  	assert_equal "X", @roman.convert(10)
-  	assert_equal "I", @roman.convert(1)
-  	assert_equal "DX", @roman.convert(510)
+  	assert_equal "VIIII", @roman.old_convert(9)
+  	assert_equal "MXII", @roman.old_convert(1012)
+  	assert_equal "CI", @roman.old_convert(101)
+  	assert_equal "X", @roman.old_convert(10)
+  	assert_equal "I", @roman.old_convert(1)
+  	assert_equal "DX", @roman.old_convert(510)
   	#new
   	assert_equal "IV", @roman.new_convert(4)
   	assert_equal "MCMLXXXIV", @roman.new_convert(1984)
