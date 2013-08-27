@@ -1,0 +1,22 @@
+:threshold: 0.09
+:servers:
+- 
+  :host: "http://dfwintas1"
+  :port: 3701
+- 
+  :host: "http://dfwintas2"
+  :port: 3701
+- 
+  :host: "http://dfwintas3"
+  :port: 3701
+- 
+  :host: "http://dfwintas1"
+  :port: 3702
+- 
+  :host: "http://dfwintas2"
+  :port: 3702
+- 
+  :host: "http://dfwintas3"
+  :port: 3702
+:pages:
+  - "/welcome.htm"
